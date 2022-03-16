@@ -30,7 +30,6 @@ main .ville {
   padding-top: 20px;
   padding-bottom: 60px;
 }
-
 .explorer button {
   background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 20px;
@@ -42,7 +41,6 @@ main .ville {
   box-shadow: 0px 5px 10px #c4c4c4;
   margin-top: 15px;
 }
-
 .explorer button:hover {
   transform: scale(1.03);
   transition: 100ms;
