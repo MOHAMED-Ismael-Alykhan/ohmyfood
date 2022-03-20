@@ -1,0 +1,40 @@
+@import "../utils/variables.scss";
+@import "../utils/box-shadow.scss";
+
+.restaurants {
+  background-color: $couleur-fond;
+  padding: 2rem 0;
+
+  & h2 {
+    padding-left: 1rem;
+  }
+  & ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  .carte-restaurant {
+    border: 1px solid green;
+    height: auto;
+    border-radius: 1rem;
+    @include box-shadow;
+  }
+  & img {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+  }
+  & h3 {
+    padding-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  & h4 {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}

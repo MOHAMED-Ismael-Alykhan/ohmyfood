@@ -3,7 +3,7 @@
 @import "../utils/variables.scss";
 
 main .fonctionnement {
-  padding: 0 1rem;
+  padding: 2rem 1rem 3rem 1rem;
 }
 .fonctionnement {
   counter-reset: numérotation;
@@ -31,7 +31,8 @@ main .fonctionnement {
       align-items: center;
       position: absolute;
       left: -13px;
-      bottom: 21px;
+      top: 50%;
+      transform: translateY(-50%);
     }
     position: relative;
     list-style: none;

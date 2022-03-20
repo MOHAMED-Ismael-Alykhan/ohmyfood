@@ -53,7 +53,7 @@ main .ville {
 }
 
 main .fonctionnement {
-  padding: 0 1rem;
+  padding: 2rem 1rem 3rem 1rem;
 }
 
 .fonctionnement {
@@ -94,11 +94,49 @@ main .fonctionnement {
   align-items: center;
   position: absolute;
   left: -13px;
-  bottom: 21px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .fonctionnement li:hover {
   transform: scale(1.02);
   transition: 100ms;
+}
+
+.restaurants {
+  background-color: #f3f3f3;
+  padding: 2rem 0;
+}
+.restaurants h2 {
+  padding-left: 1rem;
+}
+.restaurants ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+.restaurants .carte-restaurant {
+  border: 1px solid green;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0px 5px 10px #c4c4c4;
+}
+.restaurants img {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.restaurants h3 {
+  padding-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.restaurants h4 {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
