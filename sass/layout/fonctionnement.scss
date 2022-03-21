@@ -7,6 +7,11 @@ main .fonctionnement {
 }
 .fonctionnement {
   counter-reset: numérotation;
+  & h2 {
+    @media (min-width: 768px) {
+      text-align: center;
+    }
+  }
   & ul {
     display: flex;
     flex-direction: column;
@@ -15,6 +20,7 @@ main .fonctionnement {
     @media (min-width: 768px) {
       flex-direction: row;
       gap: 1.5rem;
+      padding: 0% 15%;
     }
   }
   & li {

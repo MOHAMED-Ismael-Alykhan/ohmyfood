@@ -1,0 +1,24 @@
+footer {
+  background-color: rgb(53, 51, 51);
+  padding: 0.5rem 0rem 1rem 0rem;
+  @media (min-width: 768px) {
+    text-align: center;
+  }
+
+  & h2 {
+    color: white;
+    font-family: "Shrikhand", cursive;
+    padding-left: 1rem;
+  }
+  & li {
+    list-style-type: none;
+    color: white;
+    padding-left: 0rem;
+  }
+  & ul {
+    padding-left: 1rem;
+  }
+  & p {
+    margin: 0.5rem 0rem;
+  }
+}

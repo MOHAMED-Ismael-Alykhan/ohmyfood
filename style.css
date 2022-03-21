@@ -59,6 +59,11 @@ main .fonctionnement {
 .fonctionnement {
   counter-reset: numérotation;
 }
+@media (min-width: 768px) {
+  .fonctionnement h2 {
+    text-align: center;
+  }
+}
 .fonctionnement ul {
   display: flex;
   flex-direction: column;
@@ -69,6 +74,7 @@ main .fonctionnement {
   .fonctionnement ul {
     flex-direction: row;
     gap: 1.5rem;
+    padding: 0% 15%;
   }
 }
 .fonctionnement li {
@@ -109,6 +115,12 @@ main .fonctionnement {
 .restaurants h2 {
   padding-left: 1rem;
 }
+@media (min-width: 768px) {
+  .restaurants h2 {
+    text-align: center;
+    transform: translateX(-0.5%);
+  }
+}
 .restaurants .liste-restaurants {
   list-style-type: none;
   display: grid;
@@ -135,7 +147,7 @@ main .fonctionnement {
 }
 .restaurants h3 {
   padding-left: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   margin-bottom: 0;
 }
 .restaurants p {
@@ -154,6 +166,32 @@ main .fonctionnement {
   padding: 0.5rem 0.8rem;
   top: 1rem;
   right: 1rem;
+}
+
+footer {
+  background-color: #353333;
+  padding: 0.5rem 0rem 1rem 0rem;
+}
+@media (min-width: 768px) {
+  footer {
+    text-align: center;
+  }
+}
+footer h2 {
+  color: white;
+  font-family: "Shrikhand", cursive;
+  padding-left: 1rem;
+}
+footer li {
+  list-style-type: none;
+  color: white;
+  padding-left: 0rem;
+}
+footer ul {
+  padding-left: 1rem;
+}
+footer p {
+  margin: 0.5rem 0rem;
 }
 
 /*# sourceMappingURL=style.css.map */
