@@ -138,7 +138,7 @@ main .fonctionnement {
   margin-top: 1rem;
   margin-bottom: 0;
 }
-.restaurants h4 {
+.restaurants p {
   padding-left: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
@@ -149,8 +149,8 @@ main .fonctionnement {
 .restaurants .carte-nouveau::before {
   content: "Nouveau";
   position: absolute;
-  color: green;
   background-color: #99e2d0;
+  color: #278870;
   padding: 0.5rem 0.8rem;
   top: 1rem;
   right: 1rem;
