@@ -57,4 +57,19 @@
     top: 1rem;
     right: 1rem;
   }
+  & i {
+    font-size: 2rem;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 2rem;
+    font-weight: normal;
+  }
+  & i:hover {
+    font-weight: bold;
+    color: transparent;
+    background-image: linear-gradient($couleur-secondaire, $couleur-primaire);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: 600ms;
+  }
 }
