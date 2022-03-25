@@ -22,5 +22,6 @@
   & button:hover {
     @include zoom;
     opacity: 0.9;
+    cursor: pointer;
   }
 }

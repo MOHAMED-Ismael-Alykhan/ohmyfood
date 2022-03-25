@@ -44,6 +44,7 @@ main .fonctionnement {
     @media (min-width: 768px) {
       flex-basis: 33%;
       max-width: 20rem;
+      justify-content: center;
     }
 
     &::before {

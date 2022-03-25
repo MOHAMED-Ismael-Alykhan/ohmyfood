@@ -16,6 +16,7 @@ body a {
 
 header {
   font-family: "Shrikhand", "cursive";
+  font-weight: lighter;
   text-align: center;
   box-shadow: 0 0 0.5rem #b4b4b4;
   padding: 1px;
@@ -58,6 +59,7 @@ main .ville i {
   transform: scale(1.02);
   transition: 100ms;
   opacity: 0.9;
+  cursor: pointer;
 }
 
 main .fonctionnement {
@@ -114,6 +116,7 @@ main .fonctionnement i {
   .fonctionnement li {
     flex-basis: 33%;
     max-width: 20rem;
+    justify-content: center;
   }
 }
 .fonctionnement li::before {
@@ -223,8 +226,9 @@ footer {
 }
 footer h2 {
   color: white;
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand", "sans-serif";
   padding-left: 1rem;
+  font-weight: normal;
 }
 footer li {
   list-style-type: none;
@@ -239,6 +243,237 @@ footer p {
 }
 footer i {
   margin-right: 0.5rem;
+}
+
+header {
+  font-family: "Shrikhand", "cursive";
+  font-weight: lighter;
+  text-align: center;
+  box-shadow: 0 0 0.5rem #b4b4b4;
+  padding: 1px;
+  position: relative;
+}
+
+footer {
+  background-color: #353333;
+  padding: 0.5rem 0rem 1rem 0rem;
+}
+@media (min-width: 768px) {
+  footer {
+    text-align: center;
+  }
+}
+footer h2 {
+  color: white;
+  font-family: "Shrikhand", "sans-serif";
+  padding-left: 1rem;
+  font-weight: normal;
+}
+footer li {
+  list-style-type: none;
+  color: white;
+  padding-left: 0rem;
+}
+footer ul {
+  padding-left: 1rem;
+}
+footer p {
+  margin: 0.5rem 0rem;
+}
+footer i {
+  margin-right: 0.5rem;
+}
+
+.restaurants {
+  background-color: #f3f3f3;
+  padding: 2rem 0;
+}
+.restaurants h2 {
+  padding-left: 1rem;
+}
+@media (min-width: 768px) {
+  .restaurants h2 {
+    text-align: center;
+    transform: translateX(-0.5%);
+  }
+}
+.restaurants .liste-restaurants {
+  list-style-type: none;
+  display: grid;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+@media (min-width: 768px) {
+  .restaurants .liste-restaurants {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0% 15%;
+  }
+}
+.restaurants .carte-restaurant {
+  border: 1px solid green;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0px 5px 10px #c4c4c4;
+}
+.restaurants img {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.restaurants h3 {
+  padding-left: 1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0;
+}
+.restaurants p {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.restaurants li {
+  position: relative;
+}
+.restaurants .carte-nouveau::before {
+  content: "Nouveau";
+  position: absolute;
+  background-color: #99e2d0;
+  color: #278870;
+  padding: 0.5rem 0.8rem;
+  top: 1rem;
+  right: 1rem;
+}
+.restaurants i {
+  font-size: 2rem;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 2rem;
+  font-weight: normal;
+}
+.restaurants i:hover {
+  font-weight: bold;
+  color: transparent;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 600ms;
+}
+
+.palette {
+  width: 100%;
+  max-height: 35rem;
+  object-fit: cover;
+}
+
+.titre-palette {
+  font-family: "shrikhand", "sans-serif";
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-right: auto;
+}
+@media (min-width: 768px) {
+  .titre-palette {
+    justify-content: center;
+  }
+}
+.titre-palette i {
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding-right: 3rem;
+}
+@media (min-width: 768px) {
+  .titre-palette i {
+    padding: 0rem 0rem 0rem 1rem;
+  }
+}
+.titre-palette i:hover {
+  font-weight: bold;
+  color: transparent;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 600ms;
+}
+
+.menu-palette {
+  border: 1px solid red;
+  border-radius: 2rem 2rem 0rem 0rem;
+  padding-left: 1rem;
+  background-color: #f3f3f3;
+  margin-top: -2rem;
+  position: relative;
+}
+
+.menu-complet {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .menu-complet {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "a b c" "d e f";
+  }
+}
+.menu-complet button {
+  background-image: linear-gradient(#ff79da, #9356dc);
+  border-radius: 2rem;
+  color: white;
+  font-size: 1rem;
+  height: 3rem;
+  border-style: none;
+  width: 10rem;
+  margin: 3rem auto;
+  box-shadow: 0px 5px 10px #c4c4c4;
+}
+@media (min-width: 768px) {
+  .menu-complet button {
+    grid-area: e;
+  }
+}
+.menu-complet button:hover {
+  transform: scale(1.02);
+  transition: 100ms;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.menu-complet ul {
+  padding: 0rem 1rem 0rem 0rem;
+}
+.menu-complet li {
+  list-style-type: none;
+  border: 1px solid green;
+  margin-top: 1rem;
+  border-radius: 1.5rem;
+  background-color: white;
+  box-shadow: 0px 5px 10px #c4c4c4;
+}
+.menu-complet .catégorie {
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .menu-complet .catégorie {
+    text-align: center;
+  }
+}
+.menu-complet .carte-menu {
+  padding-left: 1rem;
+}
+.menu-complet .carte-menu h3 {
+  margin-bottom: 0.5rem;
+}
+
+.accompagnement-prix {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.accompagnement-prix p {
+  margin-top: 0rem;
+}
+.accompagnement-prix span {
+  padding-right: 1rem;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
