@@ -359,6 +359,23 @@ footer i {
   transition: 600ms;
 }
 
+/************* Header *************/
+header i {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+
+/***********************************/
+@keyframes rotation-validation {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .palette {
   width: 100%;
   max-height: 35rem;
@@ -376,6 +393,9 @@ footer i {
   .titre-palette {
     justify-content: center;
   }
+}
+.titre-palette h2 {
+  font-weight: normal;
 }
 .titre-palette i {
   font-size: 1.5rem;
@@ -411,6 +431,12 @@ footer i {
 }
 @media (min-width: 768px) {
   .menu-complet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media (min-width: 1088px) {
+  .menu-complet {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "a b c" "d e f";
   }
@@ -428,6 +454,13 @@ footer i {
 }
 @media (min-width: 768px) {
   .menu-complet button {
+    position: relative;
+    top: 35%;
+  }
+}
+@media (min-width: 1088px) {
+  .menu-complet button {
+    position: initial;
     grid-area: e;
   }
 }
@@ -444,36 +477,72 @@ footer i {
   list-style-type: none;
   border: 1px solid green;
   margin-top: 1rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   background-color: white;
   box-shadow: 0px 5px 10px #c4c4c4;
 }
 .menu-complet .catégorie {
   text-transform: uppercase;
+  font-weight: lighter;
+  position: relative;
 }
-@media (min-width: 768px) {
-  .menu-complet .catégorie {
-    text-align: center;
-  }
+.menu-complet .catégorie::after {
+  position: absolute;
+  left: 0rem;
+  top: 1.5rem;
+  content: "";
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #99e2d0;
 }
 .menu-complet .carte-menu {
   padding-left: 1rem;
+  display: flex;
+  overflow: hidden;
 }
 .menu-complet .carte-menu h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0.7rem;
+}
+.menu-complet .carte-menu p {
+  margin-top: 0rem;
+  margin-bottom: 0.7rem;
 }
 
-.accompagnement-prix {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-.accompagnement-prix p {
-  margin-top: 0rem;
-}
-.accompagnement-prix span {
-  padding-right: 1rem;
+.prix {
+  margin-left: auto;
+  padding: 0.6rem 1rem;
   font-weight: bold;
+  border: 1px solid blue;
+  display: flex;
+  align-items: flex-end;
+}
+
+.validation {
+  background-color: #99e2d0;
+  padding: 1.2rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+  margin-right: -4.5rem;
+  transition: ease-out 0.4s;
+}
+.validation i {
+  background-color: white;
+  color: #99e2d0;
+  font-size: 1.5rem;
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.carte-menu:hover .validation {
+  margin-right: 0rem;
+  transition: ease-in 0.4s;
+}
+.carte-menu:hover .validation i {
+  animation: rotation-validation ease-in-out 0.6s;
 }
 
 /*# sourceMappingURL=style.css.map */
