@@ -15,6 +15,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="loader">
+      <section class="loader__cadre">
+        <div class="loader__cadre__boisson">
+          <i class="fa-solid fa-beer-mug-empty"></i>
+          <i class="fa-solid fa-wine-glass"></i>
+          <i class="fa-solid fa-martini-glass-citrus"></i>
+        </div>
+        <div class="loader__cadre__plat">
+          <i class="fa-solid fa-bowl-food"></i>
+          <i class="fa-solid fa-drumstick-bite"></i>
+          <i class="fa-solid fa-fish"></i>
+        </div>
+        <div class="loader__cadre__dessert">
+          <i class="fa-solid fa-carrot"></i>
+          <i class="fa-solid fa-apple-whole"></i>
+          <i class="fa-solid fa-cheese"></i>
+        </div>
+      </section>
+    </div>
     <header>
       <h1>ohmyfood</h1>
     </header>
@@ -31,16 +50,16 @@
       </section>
       <section class="fonctionnement">
         <h2>Fonctionnement</h2>
-        <ul>
-          <li>
+        <ul class="fonctionnement__étape">
+          <li class="fonctionnement__étape__procédure">
             <i class="fa-solid fa-mobile-screen-button"></i>
             <p>un restaurant</p>
           </li>
-          <li>
+          <li class="fonctionnement__étape__procédure">
             <i class="fa-solid fa-list-ul"></i>
             <p>votre menu</p>
           </li>
-          <li>
+          <li class="fonctionnement__étape__procédure">
             <i class="fa-solid fa-store"></i>
             <p>Dégustez au restaurant</p>
           </li>
@@ -49,10 +68,13 @@
 
       <section class="restaurants">
         <h2>Restaurants</h2>
-        <ul class="liste-restaurants">
-          <li class="carte-restaurant">
-            <a href="./pages/menu-palette.html" class="carte-nouveau">
-              <img src="./assets/La palette du goût.jpg" alt="" />
+        <ul class="restaurants__liste">
+          <li class="restaurants__liste__carte">
+            <a
+              href="./pages/menu-palette.html"
+              class="restaurants__liste__carte__nouveau"
+            >
+              <img src="./assets/palette.jpg" alt="La palette goût" />
               <div>
                 <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
@@ -60,9 +82,12 @@
               </div>
             </a>
           </li>
-          <li class="carte-restaurant">
-            <a href="#" class="carte-nouveau">
-              <img src="./assets/La note enchantée.jpg" alt="" />
+          <li class="restaurants__liste__carte">
+            <a
+              href="./pages/menu-note.html"
+              class="restaurants__liste__carte__nouveau"
+            >
+              <img src="./assets/enchantée.jpg" alt="La note enchantée" />
               <div>
                 <h3>La note enchantée</h3>
                 <p>Charonne</p>
@@ -70,9 +95,9 @@
               </div>
             </a>
           </li>
-          <li class="carte-restaurant">
-            <a href="#" classe="carte">
-              <img src="./assets/À la française.jpg" alt="" />
+          <li class="restaurants__liste__carte">
+            <a href="./pages/menu-francaise.html" class="carte">
+              <img src="./assets/française.jpg" alt="À la française" />
               <div>
                 <h3>À la française</h3>
                 <p>Cité Rouge</p>
@@ -80,9 +105,9 @@
               </div>
             </a>
           </li>
-          <li class="carte-restaurant">
-            <a href="#" class="carte">
-              <img src="./assets/Le délice des sens.jpg" alt="" />
+          <li class="restaurants__liste__carte">
+            <a href="./pages/menu-delice.html" class="carte">
+              <img src="./assets/delice.jpg" alt="Le délice des sens" />
               <h3>Le délice des sens</h3>
               <p>Folie-Méricourt</p>
               <i class="fa-solid fa-heart"></i>
@@ -110,7 +135,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="mailto:contact@ohmyfood.fr">
             <p>Contact</p>
           </a>
         </li>

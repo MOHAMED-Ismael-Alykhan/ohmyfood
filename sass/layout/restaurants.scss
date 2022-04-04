@@ -1,18 +1,11 @@
 @import "../utils/variables.scss";
-@import "../utils/box-shadow.scss";
+@import "../utils/mixins.scss";
 
 .restaurants {
   background-color: $couleur-fond;
   padding: 2rem 0;
 
-  & h2 {
-    padding-left: 1rem;
-    @media (min-width: 768px) {
-      text-align: center;
-      transform: translateX(-0.5%);
-    }
-  }
-  & .liste-restaurants {
+  &__liste {
     list-style-type: none;
     display: grid;
     gap: 2rem;
@@ -22,12 +15,32 @@
       grid-template-columns: repeat(2, 1fr);
       padding: 0% 15%;
     }
+
+    &__carte {
+      border: 1px solid green;
+      height: auto;
+      border-radius: 1rem;
+      @include box-shadow;
+      position: relative;
+
+      &__nouveau::before {
+        content: "Nouveau";
+        position: absolute;
+        background-color: $couleur-tertiaire;
+        color: darken($couleur-tertiaire, $amount: 40%);
+        padding: 0.5rem 0.8rem;
+        top: 1rem;
+        right: 1rem;
+      }
+    }
   }
-  .carte-restaurant {
-    border: 1px solid green;
-    height: auto;
-    border-radius: 1rem;
-    @include box-shadow;
+
+  & h2 {
+    padding-left: 1rem;
+    @media (min-width: 768px) {
+      text-align: center;
+      transform: translateX(-0.5%);
+    }
   }
   & img {
     height: 12rem;
@@ -45,10 +58,8 @@
     margin-top: 0.5rem;
     margin-bottom: 1rem;
   }
-  & li {
-    position: relative;
-  }
-  & .carte-nouveau::before {
+
+  /*& .carte-nouveau::before {
     content: "Nouveau";
     position: absolute;
     background-color: $couleur-tertiaire;
@@ -56,7 +67,7 @@
     padding: 0.5rem 0.8rem;
     top: 1rem;
     right: 1rem;
-  }
+  }*/
   & i {
     font-size: 2rem;
     position: absolute;

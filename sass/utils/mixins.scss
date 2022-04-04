@@ -1,0 +1,8 @@
+@mixin box-shadow {
+  box-shadow: 0px 5px 7px $couleur-box-shadow;
+}
+
+@mixin zoom {
+  transform: scale(1.02);
+  transition: 100ms;
+}

@@ -1,11 +1,11 @@
-@import "../utils/box-shadow.scss";
-@import "../utils/zoom.scss";
+@import "../utils/mixins.scss";
+
 @import "../utils/variables.scss";
 
 main .fonctionnement {
   padding: 2rem 1rem 3rem 1rem;
 
-  & li {
+  &__étape__procédure {
     display: flex;
     align-items: baseline;
     padding: 0rem 0.2rem 0rem 0.5rem;
@@ -15,6 +15,7 @@ main .fonctionnement {
     margin: 0rem 0.8rem 0rem 1rem;
     font-size: 1.5rem;
     color: grey;
+
     @media (min-width: 768px) {
       margin: 0% 3.5% 0% 3.5%;
     }
@@ -22,13 +23,14 @@ main .fonctionnement {
 }
 .fonctionnement {
   counter-reset: numérotation;
+
   & h2 {
     @media (min-width: 768px) {
       text-align: center;
     }
   }
 
-  & ul {
+  &__étape {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -38,41 +40,47 @@ main .fonctionnement {
       gap: 1.5rem;
       justify-content: center;
     }
-  }
 
-  & li {
-    @media (min-width: 768px) {
-      flex-basis: 33%;
-      max-width: 20rem;
-      justify-content: center;
-    }
+    &__procédure {
+      position: relative;
+      list-style: none;
+      background-color: #f3f3f3;
+      padding: 1.5rem 2rem;
+      /*border: 1px solid red;*/
+      border-radius: 1rem;
+      flex-grow: 1;
+      @include box-shadow;
 
-    &::before {
-      content: counter(numérotation);
-      counter-increment: numérotation;
-      background-color: $couleur-primaire;
-      color: white;
-      display: flex;
-      width: 1.5rem;
-      height: 1.5rem;
-      border-radius: 50%;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      left: -13px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    position: relative;
-    list-style: none;
-    background-color: #f3f3f3;
-    padding: 1.5rem 2rem;
-    border: 1px solid red;
-    border-radius: 1rem;
-    flex-grow: 1;
-    @include box-shadow;
-    &:hover {
-      @include zoom;
+      @media (min-width: 768px) {
+        flex-basis: 33%;
+        max-width: 20rem;
+        justify-content: center;
+      }
+
+      &::before {
+        content: counter(numérotation);
+        counter-increment: numérotation;
+        background-color: $couleur-primaire;
+        color: white;
+        display: flex;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: -13px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &:hover {
+        background-color: lighten($couleur-primaire, 35%);
+        @include zoom;
+        i {
+          color: $couleur-primaire;
+        }
+      }
     }
   }
 }
