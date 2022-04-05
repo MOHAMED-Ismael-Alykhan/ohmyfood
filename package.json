@@ -13,8 +13,8 @@
     "glob-parent": "^5.1.2",
     "immutable": "^4.0.0",
     "is-binary-path": "^2.1.0",
-    "is-glob": "^4.0.3",
     "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
     "is-number": "^7.0.0",
     "normalize-path": "^3.0.0",
     "picomatch": "^2.3.1",
@@ -23,7 +23,8 @@
     "to-regex-range": "^5.0.1"
   },
   "scripts": {
-    "sass": "sass --watch style.scss style.css"
+    "sass": "sass --watch style.scss style.css",
+    "prefix": "postcss --watch style.css -u autoprefixer -o style.prefixed.css"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,9 @@
   },
   "homepage": "https://github.com/MOHAMED-Ismael-Alykhan/ohmyfood#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
     "sass": "^1.49.9"
   }
 }
