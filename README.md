@@ -28,7 +28,7 @@ Sur tablette et desktop, le site devra s’adapter, mais ces supports n’étant
 
 ---
 
-##Livrables attendus##
+##Livrables attendus
 
 1. **Page d’accueil (x1)**
 
@@ -47,7 +47,7 @@ Sur tablette et desktop, le site devra s’adapter, mais ces supports n’étant
 
 ---
 
-##Effets graphiques et animations##
+##Effets graphiques et animations
 
 Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils devront utiliser les animations ou transitions CSS,  
  pas de JavaScript ni de librairie.
