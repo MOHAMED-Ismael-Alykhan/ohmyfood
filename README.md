@@ -52,14 +52,12 @@ Sur tablette et desktop, le site devra s’adapter, mais ces supports n’étant
 Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils devront utiliser les animations ou transitions CSS,  
  pas de JavaScript ni de librairie.
 
-**Identité graphique**
-
 **Polices**
 
 - Logo et titres: Shrikhand Texte: Roboto
 - Couleurs
-  Primaire: #9356DC
-  Secondaire: #FF79DA
+  Primaire: #9356DC  
+  Secondaire: #FF79DA  
   Tertiaire: #99E2D0
 
 **Boutons**
