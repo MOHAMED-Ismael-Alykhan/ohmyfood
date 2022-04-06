@@ -32,6 +32,7 @@
   },
   "author": "Alykhan",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/MOHAMED-Ismael-Alykhan/ohmyfood/issues"
   },
