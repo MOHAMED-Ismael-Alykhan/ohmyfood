@@ -76,7 +76,7 @@ Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils d
 
 ## installation test
 
-'''
+```
 terminal
 npm install sass
-'''
+```
