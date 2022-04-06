@@ -72,7 +72,11 @@ Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils d
 
 - Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus. Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser de la droite vers la gauche. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec des points de suspension. Un exemple de l’effet attendu est fourni.
 
+---
+
 ## installation test
 
-'terminal
-npm install sass'
+'''
+terminal
+npm install sass
+'''
