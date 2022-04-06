@@ -55,7 +55,7 @@ Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils d
 **Polices**
 
 - Logo et titres: Shrikhand Texte: Roboto
-- Couleurs
+- Couleurs  
   Primaire: #9356DC  
   Secondaire: #FF79DA  
   Tertiaire: #99E2D0
