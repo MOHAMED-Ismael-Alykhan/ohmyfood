@@ -16,3 +16,11 @@
   transform: scale(1.02);
   transition: 100ms;
 }
+
+@mixin loader {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: translation-haut forwards ease-in-out 0.8s;
+}

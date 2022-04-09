@@ -25,31 +25,34 @@
     overflow: hidden;
 
     &__boisson {
-      font-size: 3rem;
+      /*font-size: 3rem;
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      animation: translation-haut forwards ease-in-out 0.8s;
+      animation: translation-haut forwards ease-in-out 0.8s;*/
+      @include loader;
       animation-delay: 0.5s;
       color: $couleur-primaire;
     }
 
     &__plat {
-      font-size: 3rem;
+      /*font-size: 3rem;
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      animation: translation-haut forwards ease-in-out 0.8s;
+      animation: translation-haut forwards ease-in-out 0.8s;*/
+      @include loader;
       animation-delay: 1.5s;
       color: $couleur-secondaire;
     }
 
     &__dessert {
-      font-size: 3rem;
+      /*font-size: 3rem;
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      animation: translation-haut forwards ease-in-out 0.8s;
+      animation: translation-haut forwards ease-in-out 0.8s;*/
+      @include loader;
       animation-delay: 2.5s;
       color: $couleur-tertiaire;
     }

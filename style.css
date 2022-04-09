@@ -694,6 +694,11 @@ header i {
   overflow: hidden;
 }
 .loader__cadre__boisson {
+  /*font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: translation-haut forwards ease-in-out 0.8s;*/
   font-size: 3rem;
   display: flex;
   flex-direction: column;
@@ -703,6 +708,11 @@ header i {
   color: #9356dc;
 }
 .loader__cadre__plat {
+  /*font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: translation-haut forwards ease-in-out 0.8s;*/
   font-size: 3rem;
   display: flex;
   flex-direction: column;
@@ -712,6 +722,11 @@ header i {
   color: #ff79da;
 }
 .loader__cadre__dessert {
+  /*font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: translation-haut forwards ease-in-out 0.8s;*/
   font-size: 3rem;
   display: flex;
   flex-direction: column;
