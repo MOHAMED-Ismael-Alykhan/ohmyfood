@@ -38,6 +38,14 @@ main .ville i {
   bottom: 2px;
 }
 
+/*@mixin box-shadow-hover {
+  box-shadow: 0px 5px 7px darken($couleur-box-shadow, 20%);
+}
+
+@mixin zoom {
+  transform: scale(1.02);
+  transition: 100ms;
+}*/
 .explorer {
   text-align: center;
   background-color: #f3f3f3;
@@ -56,13 +64,23 @@ main .ville i {
   box-shadow: 0px 5px 7px #c4c4c4;
 }
 .explorer button:hover {
-  transform: scale(1.02);
-  transition: 100ms;
+  /*@include zoom;*/
   opacity: 0.9;
   cursor: pointer;
+  /*box-shadow: 0px 5px 7px darken($couleur-box-shadow, 20%);*/
   box-shadow: 0px 5px 7px #919191;
+  transform: scale(1.02);
+  transition: 100ms;
 }
 
+/*@mixin box-shadow-hover {
+  box-shadow: 0px 5px 7px darken($couleur-box-shadow, 20%);
+}
+
+@mixin zoom {
+  transform: scale(1.02);
+  transition: 100ms;
+}*/
 main .fonctionnement {
   padding: 2rem 1rem 3rem 1rem;
 }
@@ -138,6 +156,8 @@ main .fonctionnement i {
 }
 .fonctionnement__étape__procédure:hover {
   background-color: #f2eafb;
+  /*@include zoom;*/
+  box-shadow: 0px 5px 7px #919191;
   transform: scale(1.02);
   transition: 100ms;
 }
@@ -145,6 +165,14 @@ main .fonctionnement i {
   color: #9356dc;
 }
 
+/*@mixin box-shadow-hover {
+  box-shadow: 0px 5px 7px darken($couleur-box-shadow, 20%);
+}
+
+@mixin zoom {
+  transform: scale(1.02);
+  transition: 100ms;
+}*/
 .restaurants {
   background-color: #f3f3f3;
   padding: 2rem 0;
@@ -342,6 +370,14 @@ footer i {
     visibility: hidden;
   }
 }
+/*@mixin box-shadow-hover {
+  box-shadow: 0px 5px 7px darken($couleur-box-shadow, 20%);
+}
+
+@mixin zoom {
+  transform: scale(1.02);
+  transition: 100ms;
+}*/
 /************* Header *************/
 header i {
   font-size: 1.5rem;
@@ -360,20 +396,27 @@ header i {
 .menu {
   border: 1px solid red;
   border-radius: 2rem 2rem 0rem 0rem;
-  padding-left: 1rem;
+  /*padding-left: 1rem;*/
   background-color: #f3f3f3;
   margin-top: -2rem;
   position: relative;
+}
+@media (min-width: 768px) {
+  .menu {
+    padding-left: 1rem;
+  }
 }
 .menu__restaurants {
   font-family: "shrikhand", "sans-serif";
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  padding-left: 1rem;
 }
 @media (min-width: 768px) {
   .menu__restaurants {
     justify-content: center;
+    padding-left: 0rem;
   }
 }
 .menu__restaurants h2 {
@@ -396,6 +439,7 @@ header i {
   background-clip: text;
   -webkit-background-clip: text;
   transition: 600ms;
+  cursor: pointer;
 }
 
 .menu__complet {
@@ -445,14 +489,22 @@ header i {
   }
 }
 .menu__complet button:hover {
-  transform: scale(1.02);
-  transition: 100ms;
+  /*@include zoom;*/
   opacity: 0.9;
   cursor: pointer;
+  /*box-shadow: 0px 5px 7px darken($couleur-box-shadow, 20%);*/
   box-shadow: 0px 5px 7px #919191;
+  transform: scale(1.02);
+  transition: 100ms;
 }
 .menu__complet__catégorie {
+  padding-left: 1rem;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .menu__complet__catégorie {
+    padding-left: 0rem;
+  }
 }
 .menu__complet__catégorie__partie {
   text-transform: uppercase;

@@ -26,19 +26,24 @@ header {
 .menu {
   border: 1px solid red;
   border-radius: 2rem 2rem 0rem 0rem;
-  padding-left: 1rem;
+  /*padding-left: 1rem;*/
   background-color: $couleur-fond;
   margin-top: -2rem;
   position: relative;
+  @media (min-width: 768px) {
+    padding-left: 1rem;
+  }
 
   &__restaurants {
     font-family: "shrikhand", "sans-serif";
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    padding-left: 1rem;
 
     @media (min-width: 768px) {
       justify-content: center;
+      padding-left: 0rem;
     }
 
     & h2 {
@@ -61,6 +66,7 @@ header {
       background-clip: text;
       -webkit-background-clip: text;
       transition: 600ms;
+      cursor: pointer;
     }
   }
 }
@@ -95,6 +101,7 @@ header {
     border-style: none;
     width: 10rem;
     margin: 3rem auto;
+
     @include box-shadow;
 
     @media (min-width: 768px) {
@@ -109,14 +116,19 @@ header {
   }
 
   & button:hover {
-    @include zoom;
+    /*@include zoom;*/
     opacity: 0.9;
     cursor: pointer;
-    box-shadow: 0px 5px 7px darken($couleur-box-shadow, 20%);
+    /*box-shadow: 0px 5px 7px darken($couleur-box-shadow, 20%);*/
+    @include box-shadow-zoom-hover;
   }
 
   &__catégorie {
+    padding-left: 1rem;
     overflow: hidden;
+    @media (min-width: 768px) {
+      padding-left: 0rem;
+    }
 
     &__partie {
       text-transform: uppercase;

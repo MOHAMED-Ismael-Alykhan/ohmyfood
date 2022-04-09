@@ -76,7 +76,8 @@ main .fonctionnement {
 
       &:hover {
         background-color: lighten($couleur-primaire, 35%);
-        @include zoom;
+        /*@include zoom;*/
+        @include box-shadow-zoom-hover;
         i {
           color: $couleur-primaire;
         }
