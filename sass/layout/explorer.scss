@@ -1,5 +1,4 @@
 @import "../utils/mixins.scss";
-
 @import "../utils/variables.scss";
 
 .explorer {
@@ -20,10 +19,8 @@
     @include box-shadow;
   }
   & button:hover {
-    /*@include zoom;*/
     opacity: 0.9;
     cursor: pointer;
-    /*box-shadow: 0px 5px 7px darken($couleur-box-shadow, 20%);*/
     @include box-shadow-zoom-hover;
   }
 }

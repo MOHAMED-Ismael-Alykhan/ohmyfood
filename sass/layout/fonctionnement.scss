@@ -45,7 +45,6 @@ main .fonctionnement {
       list-style: none;
       background-color: #f3f3f3;
       padding: 1.5rem 2rem;
-      /*border: 1px solid red;*/
       border-radius: 1rem;
       flex-grow: 1;
       @include box-shadow;
@@ -75,7 +74,6 @@ main .fonctionnement {
 
       &:hover {
         background-color: lighten($couleur-primaire, 35%);
-        /*@include zoom;*/
         @include box-shadow-zoom-hover;
         i {
           color: $couleur-primaire;

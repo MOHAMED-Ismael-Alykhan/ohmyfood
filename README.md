@@ -82,6 +82,16 @@ Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils d
 
 ---
 
-## installation test
+## installation du projet
 
-`npm install sass`
+Cloner le projet
+`git clone https://github.com/MOHAMED-Ismael-Alykhan/ohmyfood.git`
+
+ou télécharger le projet et l'ouvrir dans VS code
+
+Installer les dépendances
+`npm install`
+
+Lancer les scripts
+`npm run sass`
+`npm run prefix`

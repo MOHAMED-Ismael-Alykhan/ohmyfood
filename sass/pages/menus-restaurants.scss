@@ -1,7 +1,6 @@
 @import "../utils/variables.scss";
 @import "../layout/header.scss";
 @import "../layout/footer.scss";
-/*@import "../layout/restaurants.scss";*/
 @import "../utils/keyframes.scss";
 @import "../utils/mixins.scss";
 
@@ -24,9 +23,7 @@ header {
 }
 
 .menu {
-  border: 1px solid red;
   border-radius: 2rem 2rem 0rem 0rem;
-  /*padding-left: 1rem;*/
   background-color: $couleur-fond;
   margin-top: -2rem;
   position: relative;
@@ -85,13 +82,7 @@ header {
       "a b c"
       "d e f";
   }
-  /*& a {
-    margin: 0rem auto;
-    @media (min-width: 1088px) {
-      position: initial;
-      grid-area: e;
-    }
-  }*/
+
   & button {
     background-image: linear-gradient($couleur-secondaire, $couleur-primaire);
     border-radius: 2rem;
@@ -116,10 +107,8 @@ header {
   }
 
   & button:hover {
-    /*@include zoom;*/
     opacity: 0.9;
     cursor: pointer;
-    /*box-shadow: 0px 5px 7px darken($couleur-box-shadow, 20%);*/
     @include box-shadow-zoom-hover;
   }
 
@@ -151,7 +140,6 @@ header {
 
 .carte-menu {
   list-style-type: none;
-  /*border: 1px solid green;*/
   margin: 1rem 0rem;
   border-radius: 1rem;
   background-color: white;
@@ -178,7 +166,6 @@ header {
     margin-left: auto;
     padding: 1rem 1rem 1rem 0.5rem;
     font-weight: bold;
-    /*border: 1px solid blue;*/
     display: flex;
     align-items: flex-end;
   }
@@ -215,14 +202,12 @@ header {
     overflow: hidden;
 
     & h3 {
-      /*color: red;*/
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
     }
 
     & p {
-      /*color: blue;*/
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -234,10 +219,6 @@ header {
   padding: 0rem 1rem 0rem 0rem;
   margin-top: 0.3rem;
 }
-
-/*.menu__complet {
-  animation: apparition ease-in-out 4s;
-}*/
 
 .menu__complet__catégorie__carte {
   animation: apparition ease-in-out 0.9s;
