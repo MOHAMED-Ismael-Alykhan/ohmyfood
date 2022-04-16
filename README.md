@@ -82,7 +82,7 @@ Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils d
 
 ---
 
-## installation du projet
+## Installation du projet
 
 Cloner le projet
 `git clone https://github.com/MOHAMED-Ismael-Alykhan/ohmyfood.git`

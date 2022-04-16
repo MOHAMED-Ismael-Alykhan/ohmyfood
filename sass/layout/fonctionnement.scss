@@ -4,7 +4,7 @@
 main .fonctionnement {
   padding: 2rem 1rem 3rem 1rem;
 
-  &__étape__procédure {
+  &__etape__procedure {
     display: flex;
     align-items: baseline;
     padding: 0rem 0.2rem 0rem 0.5rem;
@@ -21,7 +21,7 @@ main .fonctionnement {
   }
 }
 .fonctionnement {
-  counter-reset: numérotation;
+  counter-reset: numerotation;
 
   & h2 {
     @media (min-width: 768px) {
@@ -29,7 +29,7 @@ main .fonctionnement {
     }
   }
 
-  &__étape {
+  &__etape {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -40,7 +40,7 @@ main .fonctionnement {
       justify-content: center;
     }
 
-    &__procédure {
+    &__procedure {
       position: relative;
       list-style: none;
       background-color: #f3f3f3;
@@ -56,8 +56,8 @@ main .fonctionnement {
       }
 
       &::before {
-        content: counter(numérotation);
-        counter-increment: numérotation;
+        content: counter(numerotation);
+        counter-increment: numerotation;
         background-color: $couleur-primaire;
         color: white;
         display: flex;

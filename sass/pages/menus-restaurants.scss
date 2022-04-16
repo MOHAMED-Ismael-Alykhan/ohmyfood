@@ -112,7 +112,7 @@ header {
     @include box-shadow-zoom-hover;
   }
 
-  &__catégorie {
+  &__categorie {
     padding-left: 1rem;
     overflow: hidden;
     @media (min-width: 768px) {
@@ -216,7 +216,7 @@ header {
   }
 }
 
-.menu__complet__catégorie__carte {
+.menu__complet__categorie__carte {
   padding: 0rem 1rem 0rem 0rem;
   margin-top: 0.3rem;
 }
