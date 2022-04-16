@@ -30,23 +30,19 @@ header {
   @media (min-width: 768px) {
     padding-left: 1rem;
   }
-
   &__restaurants {
     font-family: "shrikhand", "sans-serif";
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     padding-left: 1rem;
-
     @media (min-width: 768px) {
       justify-content: center;
       padding-left: 0rem;
     }
-
     & h2 {
       font-weight: normal;
     }
-
     & i {
       font-size: 1.5rem;
       font-weight: normal;
@@ -55,7 +51,6 @@ header {
         padding: 0rem 0rem 0rem 1rem;
       }
     }
-
     & i:hover {
       font-weight: bold;
       color: transparent;
@@ -71,7 +66,6 @@ header {
 .menu__complet {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -82,7 +76,6 @@ header {
       "a b c"
       "d e f";
   }
-
   & button {
     background-image: linear-gradient($couleur-secondaire, $couleur-primaire);
     border-radius: 2rem;
@@ -92,39 +85,32 @@ header {
     border-style: none;
     width: 10rem;
     margin: 3rem auto;
-
     @include box-shadow;
-
     @media (min-width: 768px) {
       position: relative;
       top: 35%;
     }
-
     @media (min-width: 1088px) {
       position: initial;
       grid-area: e;
     }
   }
-
   & button:hover {
     opacity: 0.9;
     cursor: pointer;
     @include box-shadow-zoom-hover;
   }
-
   &__categorie {
     padding-left: 1rem;
     overflow: hidden;
     @media (min-width: 768px) {
       padding-left: 0rem;
     }
-
     &__partie {
       text-transform: uppercase;
       font-weight: lighter;
       margin-bottom: 0rem;
       position: relative;
-
       &::after {
         position: absolute;
         left: 0rem;
@@ -147,21 +133,17 @@ header {
   padding-left: 1rem;
   display: flex;
   overflow: hidden;
-
   &:hover {
     cursor: pointer;
   }
-
   & h3 {
     margin-bottom: 0.2rem;
     margin-top: 0.7rem;
   }
-
   & p {
     margin-top: 0rem;
     margin-bottom: 0.7rem;
   }
-
   &__prix {
     margin-left: auto;
     padding: 1rem 1rem 1rem 0.5rem;
@@ -169,14 +151,12 @@ header {
     display: flex;
     align-items: flex-end;
   }
-
   &__validation {
     background-color: $couleur-tertiaire;
     padding: 1.2rem;
     border-radius: 0rem 1rem 1rem 0rem;
     margin-right: -4.5rem;
     transition: ease-out 0.4s;
-
     & i {
       background-color: white;
       color: $couleur-tertiaire;
@@ -189,25 +169,20 @@ header {
       align-items: center;
     }
   }
-
   &:hover .carte-menu__validation {
     margin-right: 0rem;
     transition: ease-in 0.4s;
-
     & i {
       animation: rotation-validation ease-in-out 0.6s;
     }
   }
-
   &__choix {
     overflow: hidden;
-
     & h3 {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
     }
-
     & p {
       overflow: hidden;
       white-space: nowrap;
@@ -220,10 +195,6 @@ header {
   padding: 0rem 1rem 0rem 0rem;
   margin-top: 0.3rem;
 }
-
-/*.menu__complet__catégorie__carte {
-  animation: apparition ease-in-out 0.9s;
-}*/
 
 .carte-menu:nth-child(1) {
   animation: apparition-ascendante ease-in-out 1s both;

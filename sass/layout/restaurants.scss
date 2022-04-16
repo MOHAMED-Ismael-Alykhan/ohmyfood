@@ -4,24 +4,20 @@
 .restaurants {
   background-color: $couleur-fond;
   padding: 2rem 0;
-
   &__liste {
     list-style-type: none;
     display: grid;
     gap: 2rem;
     padding: 0 1rem;
-
     @media (min-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
       padding: 0% 15%;
     }
-
     &__carte {
       height: auto;
       border-radius: 1rem;
       @include box-shadow;
       position: relative;
-
       &__nouveau::before {
         content: "Nouveau";
         position: absolute;
@@ -33,7 +29,6 @@
       }
     }
   }
-
   & h2 {
     padding-left: 1rem;
     @media (min-width: 768px) {

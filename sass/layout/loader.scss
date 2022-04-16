@@ -14,7 +14,6 @@
   position: fixed;
   animation: disparition forwards;
   animation-delay: 3.5s;
-
   &__cadre {
     display: flex;
     justify-content: space-around;
@@ -22,19 +21,16 @@
     width: 15rem;
     height: 4rem;
     overflow: hidden;
-
     &__boisson {
       @include loader;
       animation-delay: 0.5s;
       color: $couleur-primaire;
     }
-
     &__plat {
       @include loader;
       animation-delay: 1.5s;
       color: $couleur-secondaire;
     }
-
     &__dessert {
       @include loader;
       animation-delay: 2.5s;

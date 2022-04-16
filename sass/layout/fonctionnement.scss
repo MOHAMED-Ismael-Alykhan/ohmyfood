@@ -3,18 +3,15 @@
 
 main .fonctionnement {
   padding: 2rem 1rem 3rem 1rem;
-
   &__etape__procedure {
     display: flex;
     align-items: baseline;
     padding: 0rem 0.2rem 0rem 0.5rem;
   }
-
   & i {
     margin: 0rem 0.8rem 0rem 1rem;
     font-size: 1.5rem;
     color: grey;
-
     @media (min-width: 768px) {
       margin: 0% 3.5% 0% 3.5%;
     }
@@ -22,13 +19,11 @@ main .fonctionnement {
 }
 .fonctionnement {
   counter-reset: numerotation;
-
   & h2 {
     @media (min-width: 768px) {
       text-align: center;
     }
   }
-
   &__etape {
     display: flex;
     flex-direction: column;
@@ -39,7 +34,6 @@ main .fonctionnement {
       gap: 1.5rem;
       justify-content: center;
     }
-
     &__procedure {
       position: relative;
       list-style: none;
@@ -48,13 +42,11 @@ main .fonctionnement {
       border-radius: 1rem;
       flex-grow: 1;
       @include box-shadow;
-
       @media (min-width: 768px) {
         flex-basis: 33%;
         max-width: 20rem;
         justify-content: center;
       }
-
       &::before {
         content: counter(numerotation);
         counter-increment: numerotation;
@@ -71,7 +63,6 @@ main .fonctionnement {
         top: 50%;
         transform: translateY(-50%);
       }
-
       &:hover {
         background-color: lighten($couleur-primaire, 35%);
         @include box-shadow-zoom-hover;
