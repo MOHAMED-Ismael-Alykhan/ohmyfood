@@ -92,6 +92,6 @@ ou télécharger le projet et l'ouvrir dans VS code
 Installer les dépendances
 `npm install`
 
-Lancer les scripts
-`npm run sass`
+Lancer les scripts  
+`npm run sass`  
 `npm run prefix`
