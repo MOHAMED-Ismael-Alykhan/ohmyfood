@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Dancing+Script&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Dancing+Script&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  font-family: "roboto", sans-serif;
+  & a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

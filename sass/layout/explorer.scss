@@ -1,0 +1,25 @@
+@import "../utils/mixins.scss";
+@import "../utils/variables.scss";
+
+.explorer {
+  text-align: center;
+  background-color: rgb(243, 243, 243);
+  padding-top: 20px;
+  padding-bottom: 60px;
+  & button {
+    background-image: linear-gradient($couleur-secondaire, $couleur-primaire);
+    border-radius: 2rem;
+    color: white;
+    font-size: 1rem;
+    height: 3rem;
+    border-style: none;
+    padding: 0px 20px;
+    margin-top: 15px;
+    @include box-shadow;
+  }
+  & button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    @include box-shadow-zoom-hover;
+  }
+}

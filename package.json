@@ -1,0 +1,46 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": ")Projet3 OpenClassRooms",
+  "main": "index.js",
+  "dependencies": {
+    "anymatch": "^3.1.2",
+    "binary-extensions": "^2.2.0",
+    "braces": "^3.0.2",
+    "chokidar": "^3.5.3",
+    "fill-range": "^7.0.1",
+    "fsevents": "^2.3.2",
+    "glob-parent": "^5.1.2",
+    "immutable": "^4.0.0",
+    "is-binary-path": "^2.1.0",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "is-number": "^7.0.0",
+    "normalize-path": "^3.0.0",
+    "picomatch": "^2.3.1",
+    "readdirp": "^3.6.0",
+    "source-map-js": "^1.0.2",
+    "to-regex-range": "^5.0.1"
+  },
+  "scripts": {
+    "sass": "sass --watch style.scss style.css",
+    "prefix": "postcss --watch style.css -u autoprefixer -o style.prefixed.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MOHAMED-Ismael-Alykhan/ohmyfood.git"
+  },
+  "author": "Alykhan",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/MOHAMED-Ismael-Alykhan/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/MOHAMED-Ismael-Alykhan/ohmyfood#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.49.9"
+  }
+}

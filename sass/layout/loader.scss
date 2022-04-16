@@ -1,0 +1,40 @@
+@import "../utils/keyframes.scss";
+@import "../utils/variables.scss";
+
+.loader {
+  background-color: white;
+  opacity: 0.9;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: fixed;
+  animation: disparition forwards;
+  animation-delay: 3.5s;
+  &__cadre {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.5rem;
+    width: 15rem;
+    height: 4rem;
+    overflow: hidden;
+    &__boisson {
+      @include loader;
+      animation-delay: 0.5s;
+      color: $couleur-primaire;
+    }
+    &__plat {
+      @include loader;
+      animation-delay: 1.5s;
+      color: $couleur-secondaire;
+    }
+    &__dessert {
+      @include loader;
+      animation-delay: 2.5s;
+      color: $couleur-tertiaire;
+    }
+  }
+}

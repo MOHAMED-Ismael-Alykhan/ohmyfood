@@ -1,0 +1,75 @@
+@import "../utils/mixins.scss";
+@import "../utils/variables.scss";
+
+main .fonctionnement {
+  padding: 2rem 1rem 3rem 1rem;
+  &__etape__procedure {
+    display: flex;
+    align-items: baseline;
+    padding: 0rem 0.2rem 0rem 0.5rem;
+  }
+  & i {
+    margin: 0rem 0.8rem 0rem 1rem;
+    font-size: 1.5rem;
+    color: grey;
+    @media (min-width: 768px) {
+      margin: 0% 3.5% 0% 3.5%;
+    }
+  }
+}
+.fonctionnement {
+  counter-reset: numerotation;
+  & h2 {
+    @media (min-width: 768px) {
+      text-align: center;
+    }
+  }
+  &__etape {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 0.7rem;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    &__procedure {
+      position: relative;
+      list-style: none;
+      background-color: #f3f3f3;
+      padding: 1.5rem 2rem;
+      border-radius: 1rem;
+      flex-grow: 1;
+      @include box-shadow;
+      @media (min-width: 768px) {
+        flex-basis: 33%;
+        max-width: 20rem;
+        justify-content: center;
+      }
+      &::before {
+        content: counter(numerotation);
+        counter-increment: numerotation;
+        background-color: $couleur-primaire;
+        color: white;
+        display: flex;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: -13px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:hover {
+        background-color: lighten($couleur-primaire, 35%);
+        @include box-shadow-zoom-hover;
+        i {
+          color: $couleur-primaire;
+        }
+      }
+    }
+  }
+}
